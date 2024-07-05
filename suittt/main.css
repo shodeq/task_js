@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f6f7fb;
+}
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+#bungkus{
+    width: 50%;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+}
+#bungkus i{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+#main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#kiri i{
+    transform: rotate(90deg);
+    font-size: 8rem;
+}
+#kanan i{
+    transform: rotate(-90deg) rotateY(180deg);
+    font-size: 8rem;
+}
+#kondisi{
+    display: flex;
+    justify-content: center;
+}
+#bawah{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+#bawah button{
+    cursor: pointer;
+}
+.gunting i{
+    transform: rotate(90deg);
+}
+#comp-choice, #user-choice {
+    transition: transform 0.3s;
+}
+
+.animate {
+    animation: shake 1s;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-15deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(15deg); }
+    100% { transform: rotate(0deg); }
+}
+

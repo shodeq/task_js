@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batu Kertas Gunting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="main.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <section>
+        <div id="bungkus">
+            <div id="atas">
+                <div id="main">
+                    <div id="kiri" data-choice="">
+                        <i id="comp-choice" class="fa-regular fa-hand-back-fist" style="color: #7d2ae8;"></i>                        
+                    </div>
+                    <div id="kanan" data-choice="">
+                        <i id="user-choice" class="fa-regular fa-hand-back-fist" style="color: #7d2ae8;"></i>
+                    </div>
+                </div>
+                <div id="kondisi">
+                    <p id="result">Ayo Main!</p>
+                </div>
+            </div>
+            <div id="bawah">
+                <button class="batu user" type="button" onclick="playGame('batu')">
+                    <i class="fa-regular fa-hand-back-fist" style="color: #7d2ae8;"></i> 
+                    <p>Batu</p>
+                </button>
+                <button class="kertas user" type="button" onclick="playGame('kertas')">
+                    <i class="fa-regular fa-hand" style="color: #7d2ae8;"></i>
+                    <p>Kertas</p>
+                </button>
+                <button class="gunting user" type="button" onclick="playGame('gunting')">
+                    <i class="fa-regular fa-hand-scissors" style="color: #7d2ae8;"></i> 
+                    <p>Gunting</p>
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
